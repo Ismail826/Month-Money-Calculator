@@ -19,6 +19,7 @@ clothesAmount.value = '';
 
     // const monthTotal= document.getElementById('balance').innerHTML=monthBlanceIncome;
 
+// Handle Event Handeler
 
 
 document.getElementById('calculate-btn').addEventListener('click',function(){
@@ -30,7 +31,7 @@ const totalExpense = document.getElementById('total-expense').innerHTML=totalExp
 
 });
 
-
+// Handle Event Handeler
 
 document.getElementById('save-amount').addEventListener('click',function(){
 
