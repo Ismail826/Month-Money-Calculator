@@ -1,4 +1,3 @@
-"use strict";
 // Input Feild  Handeler
 const incomeAmout = document.getElementById('income');
 const foodAmount = document.getElementById('food');
