@@ -1,4 +1,5 @@
 // Input Feild  Handeler
+
 const incomeAmout = document.getElementById('income');
 const foodAmount = document.getElementById('food');
 const rentAmount = document.getElementById('rent');
@@ -7,6 +8,10 @@ const errorMessage =  document.getElementById ('error');
 
 const totalExpencesPrice =parseInt(foodAmount.value)+parseInt(rentAmount.value)+parseInt(clothesAmount.value);
 const monthBlanceIncome = parseInt(incomeAmout.value) - totalExpencesPrice;
+
+
+
+
 
 // clear the deposit input field
 
@@ -18,6 +23,8 @@ clothesAmount.value = '';
 // Handle Event Handeler
 
 document.getElementById('calculate-btn').addEventListener('click',function(){
+ 
+ 
 
   let messages =[]
   if(isNaN(incomeAmout.value|| foodAmount.value || rentAmount.value || clothesAmount.value)){
@@ -56,6 +63,7 @@ const monthTotal= document.getElementById('balance').innerHTML=monthBlanceIncome
 
 // Handle Event Handeler
 document.getElementById('save-amount').addEventListener('click',function(){
+
 const saveMonthAmount = document.getElementById('save');
 const saveAmountNumber = parseInt(saveMonthAmount.value);
 console.log(saveAmountNumber);
@@ -73,7 +81,7 @@ const errorMessageTwo = document.getElementById('error1');
       errorMessageTwo.innerText=message;
     
   }
-
+ 
 const monthsavings = monthBlanceIncome/100*saveAmountNumber;
 const savingAmount = document.getElementById('saving-amount').innerHTML=monthsavings;
 console.log('monthsavings=------',monthsavings);
