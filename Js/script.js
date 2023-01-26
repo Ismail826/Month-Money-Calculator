@@ -6,12 +6,8 @@ const rentAmount = document.getElementById('rent');
 const clothesAmount = document.getElementById ('clothes');
 const errorMessage =  document.getElementById ('error');
 
-const totalExpencesPrice =parseInt(foodAmount.value)+parseInt(rentAmount.value)+parseInt(clothesAmount.value);
-const monthBlanceIncome = parseInt(incomeAmout.value) - totalExpencesPrice;
-
-
-
-
+// const totalExpencesPrice =parseInt(foodAmount.value)+parseInt(rentAmount.value)+parseInt(clothesAmount.value);
+// const monthBlanceIncome = parseInt(incomeAmout.value) - totalExpencesPrice;
 
 // clear the deposit input field
 
@@ -19,11 +15,14 @@ incomeAmout.value = '';
 foodAmount.value = '';
 rentAmount.value = '';
 clothesAmount.value = '';
+let totalExpencesPrice;
+let monthBlanceIncome;
 
 // Handle Event Handeler
 
 document.getElementById('calculate-btn').addEventListener('click',function(){
- 
+  totalExpencesPrice =parseInt(foodAmount.value)+parseInt(rentAmount.value)+parseInt(clothesAmount.value);
+   monthBlanceIncome = parseInt(incomeAmout.value) - totalExpencesPrice;
  
 
   let messages =[]
